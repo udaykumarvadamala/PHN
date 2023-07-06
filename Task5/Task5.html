@@ -1,0 +1,1609 @@
+<html>
+<head>
+<title>Hospital Website</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> -->
+<style>
+    *{
+    margin-left:auto;
+    margin-right:auto;
+}
+body{ 
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF; 
+    margin:0px;}
+.main{ 
+    width:1300px; 
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important; 
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom:20px;
+}
+.clearfix{
+     clear:both;     
+}
+
+/*********** Start Header (or) Menu **********/
+.header{
+    width:1300px; 
+    height:100px; 
+    float:left; 
+    border-top:2px solid #0099da;
+    border-bottom:2px solid #0099da; 
+    background:#FFF;
+}
+.header-left{ 
+    width:250px; 
+    float:left; 
+    padding-top:15px;
+}
+.header-right{ 
+    width:1050px; 
+    float:left; 
+    padding-top:10px;
+}
+ .header-right-top{ 
+    width:550px; 
+    height:35px; 
+    float:left; 
+    padding-left:500px; 
+    margin:0;
+}
+.header-right-top ul{ 
+    list-style:none; 
+    float:left; 
+    margin:5px 20px;
+}
+.header-right-top ul li{ 
+    float:left; 
+    padding:0px 10px;
+}
+.header-right-top ul li a{ 
+    font-size:12px; 
+    text-decoration:none; 
+    background:#0099da; 
+    color:#FFF; 
+    padding:8px 10px; 
+    border-radius:100px; 
+    text-align:center;
+}
+.header-right-top ul li a:hover{ 
+    background:#069; 
+    color:white;
+} 
+.form{ 
+    height:30px; 
+    padding:0px 10px; 
+    float:left; 
+    border:1px solid #0099da; 
+    border-radius:2px;
+}
+.header-right-bottom{ 
+    width:1350px; 
+    height:40px; 
+    float:left;
+}
+.header-right-bottom ul{
+    list-style:none; 
+    margin:0px; 
+    padding-left:50px
+}
+.header-right-bottom ul li{
+    list-style:none; 
+    font-family:arial; 
+    font-size:15px; 
+    padding:5px 0px 5px; 
+    margin:5px 0px; 
+    float:left; 
+    font-weight:bold;
+}
+.header-right-bottom ul li a{ 
+    padding:5px 28px 10px; 
+    margin:2px 0px 5px; 
+    text-decoration:none; 
+    color:#000;}
+.header-right-bottom ul li a:hover{
+    color:#0099dd;
+}
+/*********** End Header (or) Menu **********/
+
+/************* Start Slider (or) Banner *************/
+.slider{ 
+    width:1300px; 
+    background:url(../Desktop/Internships/Internship1\(PHN\)/#007bff); 
+    height:300px; float:left; 
+}
+.slider-h3{ 
+    font-size:30px; 
+    padding:100px 0px 0px 100px; 
+    color:#000; 
+    text-shadow:1px 0.5px #CCC;
+}
+.btn{ 
+    background:#0099da; 
+    color:#FFF; 
+    padding:9px 20px; 
+    font-size:16px; 
+    text-decoration:none; 
+    border-radius:3px; 
+    text-shadow:none;
+}
+.btn:hover{ 
+    background:#0080C0;
+}
+/************** End Slider (or) Banner *************/
+
+/*************** Start Banner Bottom *****************/ 
+.slider-bottom{ 
+    width:1300px; 
+    float:left;
+}
+.slider-bottom-parts{ 
+    width:350px; 
+    float:left; 
+    padding:20px 41px; 
+    background:#0099da; 
+    border-right:2px #FFF solid;
+}
+.slider-bottom-parts-h3{ 
+    color:#FFF; 
+    padding:20px 0px 10px; 
+    text-align:center; 
+    font-size:20px;
+}
+.slider-bottom-parts-p{ 
+    color:#FFF; 
+    line-height:26px; 
+    font-size:14px; 
+    text-align:center;
+}
+/*************** End Banner Bottom *****************/   
+
+/*************** Start Content *****************/   
+.content{ 
+    width:1300px; 
+    float:left; 
+    padding-bottom:20px;
+}
+.content-left{
+    width:950px; 
+    height:auto; 
+    float:left;
+}
+.content-left-top{
+    width:950px; 
+    float:left;
+}
+.content-left-top-left{
+    width:430px; 
+    float:left; 
+    padding:20px 10px;
+}
+.content-header-h3{ 
+    font-size:28px; 
+    padding:15px 0px; 
+    color:#0099da;
+}
+.content-left-top-right{
+    width:500px; 
+    float:left; 
+    padding-top:60px;
+}
+.content-left-top-right-p{ 
+    font-size:14px; 
+    float:left; 
+    padding:15px 0px 0px 20px; 
+    text-align:justify; 
+    color:#000; 
+    line-height:26px;
+}
+.content-left-bottom{
+    width:950px; 
+    float:left;
+}
+.content-left-bottom-parts{ 
+    width:280px; 
+    float:left; 
+    padding:0px 20px 0px 15px;
+}
+.content-left-bottom-parts p{ 
+    line-height:26px; 
+    font-size:14px; 
+    text-align:justify;
+}
+.content-right{ 
+    width:330px; 
+    height:auto;
+    float:left; 
+    padding:20px 0px 0px 20px;
+}
+.content-right-top{ 
+    width:330px; 
+    float:left;
+}
+.content-right-top-left{ 
+    width:100px; 
+    float:left; 
+    padding:0px 0px 10px;
+}
+.content-right-top-right{ 
+    width:210px; 
+    float:left;
+}
+.content-date{ 
+    color:#0099da; 
+    font-style:italic; 
+    font-size:13px; 
+    padding:0px 10px 10px;
+}
+.content-right-p{
+    padding:0px 10px 10px; 
+    font-size:12px; 
+    text-align:justify;
+}
+.content-right-bottom{
+    width:330px; 
+    float:left;
+}
+.my_form{
+    border-radius:2px; 
+    border:1px solid #0099da; 
+    margin:5px auto; 
+    height:30px; 
+    width:280px; 
+    padding:0px 10px;
+}
+.form-textarea{ 
+    border-radius:2px; 
+    border:1px solid #0099da; 
+    margin:5px auto; 
+    width:280px; 
+    padding:0px 10px;
+}
+
+.content-header{
+    color:#000; 
+    font-size:26px; 
+    text-align:center; 
+    padding:25px 10px 15px;
+}
+.content-header a{ 
+    color:#0099dd; 
+    text-decoration:none;
+}
+.content-header a:hover{ 
+    color:#069;
+}
+
+.content-bottom-boxes{ 
+    width:300px; 
+    float:left; 
+    padding:0px 20px; 
+    color:#000;
+}
+.content-bottom-bg{ 
+    background:#ebebeb; 
+    float:left; 
+    padding:20px 15px;
+}
+.content-bottom-bg-header{ 
+    font-size:18px; 
+    padding-bottom:15px;
+}
+.content-bottom-bg-p{ 
+    line-height:24px;
+}
+/************ End Content **************/
+
+
+/************ Start Footer *****************/
+.footer{ 
+    width:1300px; 
+    float:left; 
+    background:#333;
+}
+.footer-parts{ 
+    width:300px; 
+    float:left; 
+    padding:0px 10px;
+}
+.footer-parts-h4{ 
+    font-size:18px; 
+    padding:15px 10px 0px; 
+    color:#FFF;
+}
+.footer-parts ul{
+    list-style:none; 
+    padding:0px;
+}
+.footer-parts ul li{
+    list-style:none; 
+    font-size:12px; 
+    padding:5px; 
+    margin:5px 0px; 
+    font-weight:bold;
+}
+.footer-parts ul li a{
+    padding:8px 10px; 
+    margin:2px 0px; 
+    text-decoration:none; 
+    color:#CCC
+}
+
+.footer-parts ul li a:hover{
+    color:#FFF;
+}
+.copyrights{ 
+    width:1240px; 
+    font-size:12px; 
+    background:#000; 
+    float:left; 
+    padding:15px 30px 15px 30px; 
+    color:#FFF; 
+}
+.copyrights-left{ 
+    width:940px; 
+    float:left;
+}
+.copyrights-left a{ 
+    color:#FFF; 
+    text-decoration:none;
+}
+.copyrights-left a:hover{
+    color:#CCC;
+}
+.copyrights-right{ 
+    width:300px; 
+    float:left; 
+    text-align:right;
+}
+.copyrights-right a{ 
+    color:#FFF; 
+    text-decoration:none;
+}
+.copyrights-right a:hover{
+    color:#CCC;
+}
+.fa{ 
+    color:#FFF;
+}
+/*************** End Footer ***********/
+    
+</style>
+</head>
+<body>
+
+<div class="main">
+
+<!----- Start Header (or) Menu ------>
+<div class="header">
+    <div class="header-left">
+     <a href="http://www.freetimelearning.com" target="_blank">
+             <img src="Internships/Internship1(PHN)/task5/images/baby.avif" width="231" height="75" /> 
+        </a>
+    </div>
+    <div class="header-right">
+        
+        <div class="header-right-bottom">
+            <ul>
+                <li><a href="#!">Home</a></li>
+                <li><a href="task6about.html">About Us</a></li>
+                <li><a href="task6dept.html">Departments</a></li>
+                <li><a href="task6doct.html">Doctors</a></li>
+                <li><a href="task6serv.html">Services</a></li>
+                <li><a href="task6patient.html">Patient Info</a></li>
+                <li><a href="taskapp.html">Accessibility</a></li>
+                <li><a href="task6cont.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+<!----- End Header (or) Menu ------>
+
+<!----- Start Slider (or) Banner ------>
+<div class="slider">
+   <div class="slider-h3">
+    Consult Our Trusted Surgeons, <br>Make an appointmen
+        <div style="padding-top:30px;"><a href="#" class="btn">Click Here!</a></div>
+   </div>
+</div>
+<!----- End Slider (or) Banner ------>
+
+<div class="slider-bottom">
+    <div class="slider-bottom-parts">
+        <div align="center"><img src="image/b.jpg" width="70" height="60" /></div>
+        <div class="slider-bottom-parts-h3">Bariatric Surgery</div>
+        <div class="slider-bottom-parts-p">
+            Bariatric Surgery deals with weight reduction using various techniques to combat obesity.\
+             The process includes reducing the size of the stomach or removing a portion of the stomach or re-routing the small intestine. Apollo Hospitals is home to the best bariatric surgeons in the nation who are skilled in Gastrectomy and Gastroplasty among other procedures. With Apollo Hospitals, 
+            booking an appointment with the finest Bariatric Surgeons is just a click away. 
+        </div>
+    </div>
+    <div class="slider-bottom-parts">
+        <div align="center"><img src="image/p.jpg" width="70" height="60" /></div>
+        <div class="slider-bottom-parts-h3">Pulmonary</div>
+        <div class="slider-bottom-parts-p">
+            Pulmonary Medicine at Apollo Hospitals provides expertise in a broad range of diseases including 
+            asthma, COPD, critical care, cystic fibrosis, interstitial lung disease, lung cancer, neuromuscular disease, pulmonary hypertension, sarcoidosis, and sleep medicine. The smoke cessation clinics, COPD clinics are specialized clinics which offer tailor made programs and run by a team of Pulmonologist and paramedical teams.  
+        </div>
+    </div>
+    <div class="slider-bottom-parts" style="border-right:none;">
+        <div align="center"><img src="image/h.jpg" width="70" height="60" /></div>
+        <div class="slider-bottom-parts-h3">Neurology</div>
+        <div class="slider-bottom-parts-p">
+            Neurology is a centre of excellence at Apollo Hospitals and deals with diagnosis 
+            and treatment of disorders of the nervous system. The Apollo Hospital Neuro departments are 
+            equipped with the best team and state of the art facilities like Neuro radiology, sleep lab, Intensive care units etc. 
+            Our Neuro team takes care of more than 300 variety of problems like aneurisms, dementia, Alzheimers, epilepsy, 
+             Neuro oncology, neurophysiology, sleep neurology. 
+        </div>
+    </div>
+</div>
+
+<!----- Start Content ------>
+<div class="content">
+
+    <div class="content-left">
+        <div class="content-left-top">
+            <div class="content-left-top-left">
+                <div class="content-header-h3">Why Choose
+                    <br>Apollo Healthcare?</div>
+                <img src="image/A.jpg" width="430" height="250" />
+            </div>
+            <div class="content-left-top-right">
+                <div class="content-left-top-right-p">
+                    Established by Dr Prathap C Reddy in 1983, Apollo Healthcare has a robust presence across the healthcare ecosystem. 
+                    From routine wellness & preventive health care to innovative life-saving treatments and diagnostic services, 
+                    Apollo Hospitals has touched more than 120 million lives from over 120 countries, offering the best clinical outcomes.<br /><br>
+                    <a href="#!" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-left-bottom">
+            <div class="content-left-bottom-parts">
+                <div class="content-header-h3">Lorem Ipsum is simply</div>
+                <p style="margin-top:-10px;"><strong>11,000+ Healing Hands</strong></p>
+                <p>Largest network of the worlds finest and brightest medical experts
+                    who provide compassionate care using outstanding expertise and advanced technology. <a href="#">More</a></p>
+            </div>
+            <div class="content-left-bottom-parts">
+                <p style="padding-top:35px;"><strong>Most Advanced Healthcare Technology</strong></p>
+                <p>Apollo Hospitals has been the pioneer in bringing ground-breaking healthcare technologies to India. <a href="#">More</a></p>
+            </div>
+            <div class="content-left-bottom-parts">
+                <div class="content-header-h3">Videos</div>
+                <iframe width="280" height="130" src="https://www.youtube.com/embed/2KpLHdAURGo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="content-right">
+    
+        <div class="content-header-h3">News &amp; Events</div>
+        <div class="content-right-top">
+            <div class="content-right-top-left"><img src="image/e2.jpg" width="100" /></div>
+            <div class="content-right-top-right">
+                <div class="content-date">2nd & 3rd December, 2022</div>
+                <div class="content-right-p">
+                    Apollo Clinical Research Conclave 2022 aims at providing an ideal platform for professionals from Research, Industry & Academia to come together and share their expertise on different verticals.
+                </div>
+            </div>
+            <div class="content-right-top-left"><img src="image/e3.jpg" width="100" /></div>
+            <div class="content-right-top-right">
+                <div class="content-date">24-02-2018</div>
+                <div class="content-right-p">
+                    Apollo Proton Cancer Centre (APCC) had organized The Care Walk, a unique fashion walk to celebrate International Nurses Day.
+                </div>
+            </div>
+            <div class="content-right-top-left"><img src="image/e1.jpg" width="100" /></div>
+            <div class="content-right-top-right">
+                <div class="content-date">22 Apr, 2023</div>
+                <div class="content-right-p">
+                    Apollo Hospitals has announced the expansion ofthe Apollo Genomics Institute with the launch of the facility in Chennai....
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-right-bottom">
+            <div class="content-header-h3">Contact Now</div>
+            <input type="text" class="my_form" placeholder="Name">
+            <input type="text" class="my_form" placeholder="Email">
+            <textarea rows="3" class="form-textarea"></textarea><br /><br>
+            <a href="#!" class="btn">Submit</a>
+        </div>
+        
+        
+        
+    </div>
+
+</div>
+<!------ End Content ------->
+
+<!------ Start Footer ------->
+<div class="footer">
+    <div class="footer-parts">
+        <div class="footer-parts-h4">Get In Touch</div>
+        <ul>
+            <li><a href="#"><i class="fa fa-phone"></i>&nbsp; +91-9963XXXX68</a></li>
+            <li><a href="mailto:info@freetimelearning.com"><i class="fa fa-envelope"></i>&nbsp; info@freetimelearning.com</a></li>
+        </ul>
+    </div>
+    <div class="footer-parts">
+        <div class="footer-parts-h4">Extra Links</div>
+        <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+    </div>
+    <div class="footer-parts">
+        <div class="footer-parts-h4">Extra Links</div>
+        <ul>
+            <li><a href="#">Appointments</a></li>
+            <li><a href="#">Find a Doctor</a></li>
+            <li><a href="#">Insurance</a></li>
+        </ul>
+    </div>
+    <div class="footer-parts">
+        <div class="footer-parts-h4">Social Links</div><br />
+    </div>
+    <div class="clearfix"></div>
+    <div class="copyrights">
+        <div class="copyrights-left">
+        &copy; 2023. All rights reserved by Free Time uday</a>.
+        </div>
+        <div class="copyrights-right">
+            Designed by V uday Kumar
+        </div>
+    </div>
+</div>
+<!------ End Footer ------->
+<div class="clearfix"></div> 
+
+</div>
+
+</body>
+</html>
+
+ABOUT PAEG
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 500px;
+    width: 500px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>About <span>Us</span></h1>
+                <p>Apollo Hospitals was established in 1983 by Dr. Prathap C Reddy,
+                    renowned as the architect of modern healthcare in India. 
+                    As the nation's first corporate hospital, 
+                    Apollo Hospitals is acclaimed for pioneering the private healthcare revolution in the country.</p>
+                    
+
+                    <p>By 1992, Apollo Hospitals introduced Artery Stenting for the first time in India. 
+                    First private healthcare provider to perform a heart transplant in 1995. 
+                    Pioneered open heart surgeries and cardiac catheterization, 
+                    in the early 80's.</p>
+
+                    <p>
+                        Apollo Hospitals, Jubilee Hills, Hyderabad was conferred with ET Now award 2021. 
+                        Apollo Hospitals,
+                         Kolkata was conferred with Zee 24 Hour Health award for Facilitation for Excellence in Emergency Care. 
+                        The Silver award was conferred on Apollo Adlux Hospital, 
+                        Kochi for the category of Integrated Brand campaign.
+                    </p>
+               
+
+                <div class="connect-section">
+
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+DEPARTMENT PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 500px;
+    width: 500px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>Department<span>'s</span
+                    ></h1>
+                <p>Heart,   Care,   Neurosciences,  <br>
+                    
+                    
+                    Cancer,     Emergency,      Orthopaedics,       <br>Gynaecology,    ENT,    Transplants, <br>Gastroenterology,      Pulmonology     and     Colorectal </p>
+            
+                <div class="connect-section">
+
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+
+DOCTORS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 500px;
+    width: 500px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>Doctor<span>'s</span
+                    ></h1>
+                <p>Dr A G K Gokhale
+
+                    Cardiothoracic & Vascular Surgery| 32 years exp
+                    Apollo Health City Jubilee Hills
+                    English, हिंदी, తెలుగు
+                    MS, MCH(CMC Vellore), DNB, SMP(IMC), Dsc(Hons)Padmasree Awardee </p><br>
+
+                    <P>
+                        Dr Alok Ranjan
+
+                        Neurosurgery| 28 years exp
+                        Apollo Health City Jubilee Hills
+                        English, हिंदी
+                        MBBS;  MCh (Neurosurgery)
+                    </P> <br>
+                    <p>
+                        Dr K J Reddy
+
+Orthopaedics| 33 years exp
+Apollo Health City Jubilee Hills
+English, हिंदी, తెలుగు
+MBBS; MS(PGI); DNB; FRCS(ENG); FRCS(Ed),FRCS (Orth)<br>
+                    </p>
+
+                    <p>
+                        Dr Jayesh Prajapati
+
+Cardiology| 19 years exp
+Apollo Hospitals International Limited Ahmedabad
+Apollo Hospitals City Centre Ahmedabad
+English, ગુજરાતી, हिंदी
+MBBS, MD(MED), DM(CARDIOLOGY)<br>
+                    </p>
+            
+                <div class="connect-section">
+
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+
+SERVICES PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 200px;
+    width: 1000px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>Service<span>'s</span></h1>
+                <p>Voice of Customer Process:<br>
+
+                    * A robust feedback mechanism that has all the listening and learning ports available to capture Patient feedback from all touch points
+                    Partnered with Gallup to benchmark customer feedback with the best in class Hospitals Globally
+                    Specially In- House customized framework that captures feedback and converts them into qualitative & quantitative data that are used for developing new products and services to drive Patient Experience
+                    Awarded the Best Innovation in Service Delivery by AIMA in 2013 & Hospital Management Awards in 2014
+                    AIFS (Apollo Instant Feedback System), our new service innovation that captures feedback at the Point of Service.<br>
+                
+                Centralized Post Discharge Calling:<br>
+                
+                    A unique concept that has been initiated to find out true patient voice after they get discharged from the Hospitals.
+                    A dedicated team of Health care professionals who are trained & quipped to provide assistance to Patients post their discharge with regards to future appointments and medication management.
+                    Feedback captured during post discharge calling used for Quality & Training purposes.<br>
+                
+                Tender Loving Care:<br>
+                
+                    Has been our guiding motto of the organization from inception.
+                    The art of TLC has been converted into a science using ADCA framework
+                    All front line associates are empowered and trained to convert daily transactions into memorable stories
+                    15000+ stories are created every month across the group
+                    A coffee table book is crafted once is two years which has best 100 moments that has been done for our Patients<br>
+                
+                
+                Dial 30:<br>
+                
+                    A one- touch button that is provided to all In- Patients & Attenders to take care of non- medical needs.
+                    Every request is tracked against an SLA to improve Service Efficiencies
+                    A unique innovation designed to increase nursing bandwidth to spread more quality time with the Patient
+                    Request tracked through this system are visited once in a quarter for process re- engineering<br>
+                
+                Service Standards:<br>
+                
+                    1005 Critical to Customer Standards developed for In- Patients/ Out- Patients/ Personalized Health Check-up/ Facility Management & Apollo Look
+                    All associates are trained through a digital platform on these prescribed standards
+                    After successful completion of their training they are assessed and certified which is renewed once every year.
+                    Apollo Hospitals have been able to raise the bar on Patient Experience by strong adoption and razor edge deployment<br>
+                
+                Human Sigma:<br>
+                
+                    1st in India to adopt Human Sigma by mapping customer and employee engagement to the Gallup S methodology
+                    This recognizes exceptional leadership that understands that engaging employees drives real business outcomes
+                    Apollo now among globally recognized organizations for mastering how to engage workforce to deliver business growth
+                    Apollo uses this frame work to hire the “Right Talent for the Right Job”<br>
+                
+                </p>
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+CONCAT PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 500px;
+    width: 500px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>Contact<span>Us</span></h1>
+                <p>
+
+                    Apollo Hospitals is always looking to make things easier for you. 
+                    Our aim is to provide our customers with the best medical facilities, 
+                    constant care, and reliable support. 
+                    If you would like to get in touch with a doctor from a specific department, 
+                    would like some specific information about the services we provide, 
+                    or just have a question for us,</p>
+                
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+PATIENT PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 500px;
+    width: 500px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>Patient<span>Info</span></h1>
+                <p>Information is an essential part of the patient journey and is largely vital to the overall quality of each patients experience at Apollo Hospitals. This guide is for you if you are about to have, or you are recuperating from a procedure/surgery. 
+                    You might also find it useful to share this information with your family and friends.
+
+                    </p>
+                
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+
+ACHIVEMENTS 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility:</title>
+     <style>
+        
+.footer{
+    margin-top: 80px;
+    background-color: black;
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: black;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+
+
+/* About Us */
+
+.aboutbody{
+    background-color: #191919;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.abt-text{
+    width: 500px;
+}
+
+.abt-text h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.abt-text h1 span{
+    color: #fc0050;
+    letter-spacing: 1px;
+}
+
+.abt-text p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    padding-left: 500px;
+}
+p{
+    padding-left: 200px;
+    width: 1000px;
+}
+
+     </style>
+</head>
+<body class="aboutbody">
+        <nav>
+        
+    <section class="about">
+           <div class="main">
+            <div class="abt-text">
+                <h1>Accessibility<span>'s</span></h1>
+                <p>Delhi: Apollo Hospitals submitted its recommendations and requests for represent ..
+
+                    Read more at:
+                    https://health.economictimes.indiatimes.com/news/hospitals/apollo-hospitals-focuses-on-healthcare-accessibility-and-affordability-in-pre-budget-recommendation/95759160
+                </p>
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+</body>
+</html>
+
+
+

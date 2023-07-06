@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <title>Landing Page</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    background-color: white;
+}
+
+ nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #007bff;
+} 
+
+ nav .heading {
+    font-size: 30px;
+    font-weight: 750;
+    color: white;
+} 
+
+ nav ul {
+    display: flex;
+    list-style: none;
+} 
+
+ nav ul li {
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+} 
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+} 
+
+ nav ul li:hover {
+    background-color: #ed1144;
+} 
+
+ nav ul li a:hover {
+    color: white;
+}
+
+.line { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.line .side1 {
+    padding-right: 50px;
+}
+
+.side1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ .contact {
+    padding: 20px;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.content .title {
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+} 
+
+ .title {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.contactMenu {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+ .input2 {
+    margin-top: 10;
+}
+
+.label1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+} 
+
+ .contactMenu .input1 input {
+    border-radius: 13px;
+    padding: 6px;
+}
+
+.input2 input {
+    border-color: rgb(252, 244, 244);
+    width: 400px;
+} 
+
+ .button {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.button button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+.button button:hover {
+    background-color:#ed1144 ;
+}
+
+button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+} 
+
+button:hover {
+    background-color: #ed1144;
+} 
+
+.rightside1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.title1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.content1 {
+    width: 450px;
+    margin-top: 2px;
+    color: gray;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+footer .footer span {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+footer .footer span a {
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+footer .footer span a:hover {
+    text-decoration: underline;
+}
+
+.featured {
+      background-color: #007bff;
+      padding: 80px;
+      text-align: center;
+
+    }
+    
+    .updates {
+      background-color: white;
+      padding: 80px;
+      text-align: center;
+    }
+    
+    .events {
+      background-color: #007bff;
+      padding: 80px;
+      text-align: center;
+    }
+    
+#navbar a:hover,
+#navbar li:hover>a {
+    color: #000;
+} */
+
+    </style>
+</head>
+
+<body>
+    
+    
+    <nav>
+        <div class="heading">Landing Page</div>
+        <div class="ftl_menu">
+            <ul id="navbar">
+                <li><a href="#Home">Home</a></li>
+            
+                <li><a href="#">About</a></li>
+            
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Landing Page</h1>
+            <button>
+                <a href=
+"https://www.geeksforgeeks.org/">
+                    Explore More
+                </a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src=
+"Internships/Internship1(PHN)/task 2/images/e.jpg"
+                width="500">
+        </div>
+    </div>
+
+    
+    <section class="featured">
+        <h2>Featured Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at metus ut urna semper mollis vel vitae est.</p>
+      </section>
+  
+      <section class="updates">
+        <h2>Recent Updates</h2>
+        <ul>
+          <li>Update 1</li>
+          <li>Update 2</li>
+          <li>Update 3</li>
+        </ul>
+      </section>
+  
+      <section class="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>Event 1</li>
+          <li>Event 2</li>
+          <li>Event 3</li>
+        </ul>
+      </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text"
+                            placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text"
+                            placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text"
+                            placeholder="Enter your Password here">
+                    </div>
+                    <div class="button">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>
+                                Contact Us
+                            </span>
+                        </div>
+                        <div class="content1">
+                            A-143, 9th Floor, Sovereign
+                            Corporate Tower, Sector-136,
+                            Noida, Uttar Pradesh - 201305
+                        </div>
+                        <div class="title1">
+                            <span>More Information</span>
+                        </div>
+                        <div class="content1">
+                            Loading pages are screens that users see when the app they are using is being loaded. They are important because they help users focus on the loading progress, not on the loading time. It's also a confirmation that things are moving forward, and the app isn't broken.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+            <span>
+                
+                <a href="https://www.geeksforgeeks.org/"
+                    target="_blank">
+                THANKS FOR VISITING US
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
+
